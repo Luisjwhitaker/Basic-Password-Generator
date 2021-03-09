@@ -1,7 +1,7 @@
 import random
 import string
 from tkinter import *
-
+# ---------------
 def popmsg(final):
     popup = Tk()
     text = Text(popup,height=2, width=30)
@@ -18,8 +18,8 @@ def generate():
     bucket = []
     final = []
 # ---------------
-    if sum(lower_selected.get()+upper_selected.get()+numbers_selected.get()+ssymbols_selected.get()) = 0:
-        popmsg('Please check one') # checks to see if at least one checkbox is checked
+    #if sum(lower_selected.get()+upper_selected.get()+numbers_selected.get()+ssymbols_selected.get()) = 0:
+    #    popmsg('Please check one') # checks to see if at least one checkbox is checked
     if lower_selected.get():
         for letter in lower:
             bucket.append(letter)
@@ -43,6 +43,7 @@ def generate():
     print(''.join(final))  # prints the final list of characters in string form
 # ---------------
 root = Tk()
+root.geometry("300x300")
 # ---------------
 lower_selected = IntVar()
 upper_selected = IntVar()
