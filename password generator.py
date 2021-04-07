@@ -1,14 +1,14 @@
 import random
 import string
 from tkinter import *
-# ---------------
+# function to open popup message
 def popmsg(final):
     popup = Tk()
     text = Text(popup,height=2, width=30)
     text.pack()
     text.insert(END,final)
     popup.mainloop()
-# ---------------
+# this funcion is what makes the "pool" or "bucket" of availabe characters
 def generate():
     lower = string.ascii_lowercase
     upper = string.ascii_uppercase
